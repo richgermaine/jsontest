@@ -8,5 +8,9 @@ var app = express();
       response.send("Message received.");
       response.end();
 });
+  app.get("/test", function(request, response) {
+	  console.log(request.body);
+	  response.send("testing");
+  });
 
 app.listen(8080);
